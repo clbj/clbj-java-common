@@ -23,11 +23,11 @@ public class Downloader {
         // TODO code application logic here
         // ceffd92e39d802caf18d5f514a20a178
         System.out.println("Iniciando execução ...");
-        for (int i = 200; i < 210; i++) {
+        for (int i = 1; i < 97320; i++) {
             HashMap<String,Object> params = new HashMap<>();
             HashMap<String,String> headers = new HashMap<>();
             params.put("url", "http://jaws.clicrbs.com.br/gaucha/site/news-article/published/"+i);
-            params.put("path", "/tmp/gaucha");
+            params.put("path", "/data/downloads/gaucha");
             params.put("overwrite", Boolean.TRUE);
             params.put("extension", "xml");
             headers.put("JAWS-KEY", "ceffd92e39d802caf18d5f514a20a178");
